@@ -1,0 +1,26 @@
+[tool.ruff]
+line-length = 96
+target-version = "py312"
+exclude = [".venv", "env", "migrations"]
+
+[tool.ruff.lint]
+select = [
+  "E",    # pycodestyle
+  "F",    # pyflakes
+  "I",    # import sorting
+  "UP",   # pyupgrade
+  "B",    # bugbear
+  "C4",   # comprehensions
+  "DJ",   # Django-specific
+  "SIM",  # simplify
+]
+ignore = [
+  "B008",  # function call in default argument: common and fine in Django
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests reach into private module state deliberately.
+"boards/tests/*" = ["SLF001"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["boards", "mini_trello_be"]

@@ -1,0 +1,41 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtualenvs. A 162 MB venv was committed to this repo once; never again.
+env/
+.venv/
+venv/
+ENV/
+
+# ---- Django ----
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+
+# ---- Node ----
+node_modules/
+/mini_trello_fe/build/
+npm-debug.log*
+yarn-error.log*
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Tooling / test output ----
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.dynamodb-local/
+/mini_trello_fe/test-results/
+/mini_trello_fe/playwright-report/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db

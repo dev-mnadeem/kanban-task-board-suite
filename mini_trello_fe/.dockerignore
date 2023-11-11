@@ -1,0 +1,15 @@
+node_modules/
+build/
+coverage/
+e2e/
+test-results/
+playwright-report/
+screenshots.config.js
+.env
+.env.*
+!.env.example
+.git/
+.gitignore
+Dockerfile
+.dockerignore
+npm-debug.log*

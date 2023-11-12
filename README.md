@@ -78,3 +78,7 @@ Backend tests use moto, so they don't need network access or AWS.
 - Add authentication; right now anyone who can reach the API can read and delete every card.
 - Persist card order within a lane (only moves between lanes are saved).
 - Runtime requirements are locked on Django 5.2.18 / Graphene 3. The 72 backend tests use moto and need no live AWS account.
+
+## Author
+
+[**Muhammad Nadeem**](https://github.com/dev-mnadeem)

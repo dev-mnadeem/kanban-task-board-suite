@@ -148,8 +148,8 @@ class TestApiSurface:
 
     @pytest.mark.parametrize("field", ["allCards", "cardPage", "card", "lanes"])
     def test_query_fields_exist(self, field):
-        assert field in schema.get_query_type().fields
+        assert field in schema.graphql_schema.query_type.fields
 
     @pytest.mark.parametrize("field", ["createCard", "updateCard", "deleteCard"])
     def test_mutation_fields_exist(self, field):
-        assert field in schema.get_mutation_type().fields
+        assert field in schema.graphql_schema.mutation_type.fields

@@ -1,0 +1,5 @@
+Django>=5.2,<5.3
+graphene-django>=3.2,<4
+django-cors-headers>=4.5,<5
+boto3>=1.35
+sqlparse>=0.5.3

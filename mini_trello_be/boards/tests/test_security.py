@@ -48,8 +48,8 @@ class TestNoTenancy:
         assert result.data["deleteCard"]["success"] is True
 
     def test_the_schema_exposes_no_user_or_auth_fields(self):
-        query_fields = set(schema.get_query_type().fields)
-        mutation_fields = set(schema.get_mutation_type().fields)
+        query_fields = set(schema.graphql_schema.query_type.fields)
+        mutation_fields = set(schema.graphql_schema.mutation_type.fields)
 
         assert not {f for f in query_fields if "user" in f.lower() or f.lower() == "me"}
         assert not {

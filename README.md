@@ -6,7 +6,7 @@ There is one shared board and no user accounts.
 
 ![Board](docs/screenshots/board.png)
 
-**Stack:** React 18, Apollo Client, react-beautiful-dnd, Django 3.2, graphene-django 2, boto3 / DynamoDB, pytest + moto.
+**Stack:** React 18, Apollo Client, react-beautiful-dnd, Django 5.2 LTS, graphene-django 3, boto3 / DynamoDB, pytest + moto.
 
 ## Running it
 
@@ -77,4 +77,4 @@ Backend tests use moto, so they don't need network access or AWS.
 
 - Add authentication; right now anyone who can reach the API can read and delete every card.
 - Persist card order within a lane (only moves between lanes are saved).
-- Upgrade to Django 4.2 and graphene-django 3, since Django 3.2 is past end of life.
+- Runtime requirements are locked on Django 5.2.18 / Graphene 3. The 72 backend tests use moto and need no live AWS account.
